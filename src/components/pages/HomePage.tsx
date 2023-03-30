@@ -1,10 +1,13 @@
 import * as React from 'react';
 import { Box, CssBaseline, styled, useTheme } from '@mui/material';
 import { FunctionComponent } from 'react';
-import { FOOTER_HEIGHT } from '../footer/Footer';
 import { Page } from '../Page';
 import AnimatedText from 'react-animated-text-content';
 import { AnimatedTextLoop } from '../AnimatedTextLoop';
+import { FOOTER_HEIGHT } from '../footer/Footer';
+import { HEADER_HEIGHT } from '../header/Header';
+
+export const isHomePage = () => window.location.pathname === '/';
 
 const AnimatedH1 = styled(AnimatedText)(({ theme }) => theme.typography.h1);
 
@@ -17,16 +20,14 @@ export const HomePage: FunctionComponent = () => {
         style={{
           alignItems: 'center',
           backgroundColor: 'rgba(255,255,255,0.4)',
-          bottom: FOOTER_HEIGHT,
           display: 'flex',
           flexDirection: 'column',
-          height: '100vh',
+          height: `calc(100% - ${FOOTER_HEIGHT} - ${HEADER_HEIGHT})`,
           justifyContent: 'center',
           padding: theme.spacing(),
           position: 'absolute',
           width: '100%',
         }}
-        // position="absolute" top="50%" left="50%" zIndex={1}
       >
         <CssBaseline />
         <AnimatedH1

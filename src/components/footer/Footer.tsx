@@ -1,17 +1,19 @@
 import * as React from 'react';
-import { Box, IconButton } from '@mui/material';
+import { Box, IconButton, useTheme } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { isHomePage } from '../pages/HomePage';
 export const FOOTER_HEIGHT = '50px';
 
 export const Footer: React.FunctionComponent = () => {
+  const theme = useTheme();
+
   return (
     <Box
-      position="absolute"
-      bottom={0}
       sx={{
-        position: 'absolute',
-        bottom: 0,
+        position: isHomePage() ? 'absolute' : 'relative',
+        bottom: isHomePage() ? 0 : undefined,
+        backgroundColor: theme.palette.primary.main,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

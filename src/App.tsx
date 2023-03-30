@@ -4,6 +4,7 @@ import { AppRouter } from './components/Router';
 import { Header } from './components/header/Header';
 import { theme } from './theme/theme';
 import { Footer } from './components/footer/Footer';
+import { isHomePage } from './components/pages/HomePage';
 
 export const App: React.FunctionComponent = () => {
   return (
@@ -11,7 +12,12 @@ export const App: React.FunctionComponent = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
 
-        <Box sx={{ height: '100vh' }}>
+        <Box
+          sx={{
+            height: isHomePage() ? '100vh' : undefined,
+            overflow: 'hidden',
+          }}
+        >
           <Header />
           <AppRouter />
           <Footer />
