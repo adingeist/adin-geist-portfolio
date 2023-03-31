@@ -46,5 +46,11 @@ export const theme = createTheme({
         disableRipple: true,
       },
     },
+    MuiLink: {
+      defaultProps: {
+        underline: 'none',
+        color: '#000000',
+      },
+    },
   },
 });

@@ -15,10 +15,11 @@ export const ProjectsPage: React.FunctionComponent = () => {
         {projects.map((project) => (
           <InteractiveCard
             key={project.title}
-            imgSrc={project.imgSrc}
             title={project.title}
             subtitle={project.subtitle}
             description={project.description}
+            imgSrc={project.imgSrc}
+            showMoreLink={project.showMoreLink}
           />
         ))}
       </Box>
