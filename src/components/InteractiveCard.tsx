@@ -40,7 +40,14 @@ export const InteractiveCard: React.FunctionComponent<Props> = (props) => {
         },
       }}
     >
-      <img style={{ maxWidth: '400px' }} src={props.imgSrc} />
+      <img
+        style={{
+          maxWidth: '400px',
+          borderRadius: theme.spacing(),
+          boxShadow: theme.shadows[3],
+        }}
+        src={props.imgSrc}
+      />
       <div style={{ margin: theme.spacing() }} />
       <Box sx={{ alignSelf: 'flex-start', flex: 1 }}>
         <Typography variant="h4">{props.title}</Typography>
