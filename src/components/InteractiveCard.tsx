@@ -1,7 +1,15 @@
-import { ChevronRight } from '@mui/icons-material';
-import { Box, Link, Typography, useTheme } from '@mui/material';
+import { ArrowBack, ChevronRight } from '@mui/icons-material';
+import {
+  Box,
+  Link,
+  SvgIcon,
+  Tooltip,
+  Typography,
+  useTheme,
+} from '@mui/material';
 import React, { useCallback, useState } from 'react';
 import type { Project } from './pages/projects';
+import { SkillIcon } from './SkillIcon';
 
 type Props = Project;
 
@@ -43,16 +51,31 @@ export const InteractiveCard: React.FunctionComponent<Props> = (props) => {
       <img
         style={{
           maxWidth: '400px',
+          height: '300px',
+          objectFit: 'contain',
           borderRadius: theme.spacing(),
           boxShadow: theme.shadows[3],
         }}
         src={props.imgSrc}
       />
       <div style={{ margin: theme.spacing() }} />
-      <Box sx={{ alignSelf: 'flex-start', flex: 1 }}>
+      <Box
+        sx={{
+          alignSelf: 'flex-start',
+          flex: 1,
+        }}
+      >
         <Typography variant="h4">{props.title}</Typography>
         <Typography variant="h5">{props.subtitle}</Typography>
         <Typography variant="body1">{props.description}</Typography>
+        <Box sx={{ marginTop: '10px' }}>
+          <Typography sx={{ fontWeight: 'bold' }} variant="body1">
+            Skills
+          </Typography>
+          {props.skills?.map((skill) => (
+            <SkillIcon key={skill} skill={skill} />
+          ))}
+        </Box>
       </Box>
       <ChevronRight
         sx={{

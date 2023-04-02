@@ -20,6 +20,7 @@ export const ProjectsPage: React.FunctionComponent = () => {
             description={project.description}
             imgSrc={project.imgSrc}
             showMoreLink={project.showMoreLink}
+            skills={project.skills}
           />
         ))}
       </Box>
