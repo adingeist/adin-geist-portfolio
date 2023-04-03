@@ -82,7 +82,8 @@ export const projects: Project[] = [
     imgSrc: '/images/chat-app.png',
     title: 'Chat App',
     subtitle: 'Socket-based live chat rooms',
-    description: 'Created a space where people can share recipes!',
+    description:
+      'Crafted a multithreaded server catering to the needs of numerous users joining a chat room. An accompanying user interface facilitating a seamless live socket connection. The application enables users to effortlessly access real-time information on other online users and messages by seamlessly communicating with the server.',
     showMoreLink: '/projects/chat-app',
     skills: ['Java'],
   },
@@ -90,7 +91,8 @@ export const projects: Project[] = [
     imgSrc: '/images/popper-pig.png',
     title: 'Popper Pig',
     subtitle: 'Mobile game for iOS and Android devices',
-    description: 'Created a space where people can share recipes!',
+    description:
+      "An exhilarating hyper-casual arcade game. The player takes control over their pig soaring through the sky that's determined to pop as many balloons as possible. The game has intuitive controls where the player can easily raise or lower the pig by holding or releasing the screen. As the game progresses, the game intensifies, getting faster and more challenging. Be careful not to let too many balloons escape or it's game over! ",
     showMoreLink: '/projects/popper-pig',
     skills: ['Python', 'Kivy', 'Android'],
   },
@@ -98,7 +100,8 @@ export const projects: Project[] = [
     imgSrc: '/images/yahtzee.png',
     title: 'Yahtzee',
     subtitle: 'Entire dice game made with C and assembly',
-    description: 'Created a space where people can share recipes!',
+    description:
+      'Recreation of one of my favorite games! Just like the real game, players have five dice they roll three times and can hold dice between turns. Players gain points for rolling all the same or specific dice combinations. Having five dice show the same number earns the beloved Yahtzee! Users can associate their high score with their name on a leaderboard to recreate the real-life competition.',
     showMoreLink: '/projects/yahtzee',
     skills: ['C', 'Assembly'],
   },
@@ -106,7 +109,8 @@ export const projects: Project[] = [
     imgSrc: '/images/shape-fall.png',
     title: 'Shape Fall',
     subtitle: 'Cross-platform mobile arcade-puzzle game',
-    description: 'Created a space where people can share recipes!',
+    description:
+      'Guide the precious golden square to the bottom of each tower. Carefully tap away the blocks of the tower while avoiding the collapse of the structure and keeping the golden block safe. As players progress through levels, they unlock new tower blocks and discover their special abilities. With each new world, a new block and a range of challenging levels await players.',
     showMoreLink: '/projects/shape-fall',
     skills: ['GameSalad', 'Chartboost', 'iOS', 'Android'],
   },
@@ -114,7 +118,8 @@ export const projects: Project[] = [
     imgSrc: '/images/goldcrest.png',
     title: 'Goldcrest',
     subtitle: '1st place winning role playing game',
-    description: 'Created a space where people can share recipes!',
+    description:
+      "Won 1st place in the 2019 Technology Student Association Pennsylvania state-wide Video Game Design competition. Step into the shoes of Gilbert, the hero destined to save Goldcrest from an unprecedented drought. The believed-to-be mythical gobblers are real and devastating the village's crops. Interact people in the village to obtain tasks and figure out how to save Goldcrest.",
     showMoreLink: '/projects/goldcrest',
     skills: ['GameSalad', 'HTML5'],
   },
@@ -122,7 +127,8 @@ export const projects: Project[] = [
     imgSrc: '/images/binkos-dragstrip.png',
     title: "Binko's Dragstrip",
     subtitle: '3rd place upgrade-racing game',
-    description: 'Created a space where people can share recipes!',
+    description:
+      "Won 3rd place in the 2018 Technology Student Association Pennsylvania state-wide Video Game Design competition. Binko wants to create a legacy for himself. He wants to be the world's best racer. Collect power-ups and coins as you progress through each arena where the stakes continue to rise.",
     showMoreLink: '/projects/binkos-dragstrip',
     skills: ['GameSalad', 'HTML5'],
   },
@@ -130,7 +136,8 @@ export const projects: Project[] = [
     imgSrc: '/images/the-golden-peach.png',
     title: 'The Golden Peach',
     subtitle: 'State qualifying adventure platformer',
-    description: 'Created a space where people can share recipes!',
+    description:
+      "One of my favorite and most nostalgic works that made me love coding. Won 7th place in the 2017 Technology Student Association Pennsylvania state-wide Video Game Design competition. The once prosperous Critterville had their Golden Peach stolen by the orcs in Orc Valley. The peach has magical powers, brining life to where it's present. The hero must fight their way through the orcs to retrieve the peach and save Critterville.",
     showMoreLink: '/projects/the-golden-peach',
     skills: ['GameSalad', 'HTML5'],
   },
