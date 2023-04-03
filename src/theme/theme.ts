@@ -26,6 +26,10 @@ export const theme = createTheme({
     h2: {
       margin: '0px',
     },
+    h3: {
+      fontSize: '36px',
+      fontWeight: 'bold',
+    },
   },
 
   components: {

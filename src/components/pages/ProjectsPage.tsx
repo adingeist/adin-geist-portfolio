@@ -3,13 +3,14 @@ import * as React from 'react';
 import { InteractiveCard } from '../InteractiveCard';
 import { Page } from '../Page';
 import { projects } from './projects';
+import { Banner } from '../Banner';
 
 export const ProjectsPage: React.FunctionComponent = () => {
   const theme = useTheme();
 
   return (
     <Page>
-      <Typography variant="h3">Projects</Typography>
+      <Banner>Projects</Banner>
 
       <Box sx={{ margin: theme.spacing() }}>
         {projects.map((project) => (

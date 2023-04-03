@@ -11,8 +11,9 @@ export const Footer: React.FunctionComponent = () => {
   return (
     <Box
       sx={{
-        position: isHomePage() ? 'absolute' : 'relative',
-        bottom: isHomePage() ? 0 : undefined,
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
         backgroundColor: theme.palette.primary.main,
         display: 'flex',
         justifyContent: 'center',

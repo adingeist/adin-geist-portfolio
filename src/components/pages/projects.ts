@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     imgSrc: '/images/nibl.png',
     title: 'Nibl',
-    subtitle: 'Recipe Social Networking App',
+    subtitle: 'Recipe social networking app',
     description:
       "Created a social aimed at providing a niche audience with a space to share and react to recipes. Creators have a streamlined means of delivering engaging short-form video with detailed nutritional information. The app exceeds the necessities of a social app by including push notifications, liking, commenting, nib'ing, following, video editing and much more.",
     showMoreLink: '/projects/nibl',
@@ -54,7 +54,7 @@ export const projects: Project[] = [
   {
     imgSrc: '/images/steeps.png',
     title: 'Steeps',
-    subtitle: 'Tea e-Commerce Store',
+    subtitle: 'Tea e-commerce store',
     description:
       'Developed an e-commerce site using React and integrated it with Stripe for processing order checkouts, adding and removing items from the cart, and managing listings. The website allowed users to easily browse and purchase products, with a streamlined checkout process. I leveraged React to create an intuitive and user-friendly interface, making it easy for customers to navigate and find products.',
     showMoreLink: '/projects/steeps',
@@ -63,7 +63,7 @@ export const projects: Project[] = [
   {
     imgSrc: '/images/the-conversation.png',
     title: 'The Conversation',
-    subtitle: 'Twitter-like Message Board',
+    subtitle: 'Twitter-like message board',
     description:
       "Developed a chat message board that allowed users to create an account, securely login, and then view and make posts. The posts were persisted in a SQL database, ensuring that users could access the message board and their posts whenever they logged in. I utilized a RESTful API architecture with JSON Web Tokens for authentication, ensuring that users could securely login and access the message board's features.",
     showMoreLink: '/projects/the-conversation',
