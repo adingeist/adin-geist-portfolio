@@ -23,7 +23,7 @@ export const Footer: React.FunctionComponent = () => {
       }}
     >
       <IconButton
-        aria-label="delete"
+        aria-label="Github Icon"
         target="_blank"
         referrerPolicy="no-referrer"
         href="https://github.com/adingeist"
@@ -31,10 +31,10 @@ export const Footer: React.FunctionComponent = () => {
         <GitHubIcon sx={{ width: '30px', height: '30px' }} />
       </IconButton>
       <IconButton
+        aria-label="LinkedIn Icon"
         href="https://www.linkedin.com/in/adin-geist/"
         target="_blank"
         referrerPolicy="no-referrer"
-        aria-label="delete"
       >
         <LinkedInIcon sx={{ width: '30px', height: '30px' }} />
       </IconButton>

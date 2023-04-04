@@ -19,6 +19,7 @@
     "@types/react-dom": "^18.0.11",
     "react": "^18.2.0",
     "react-animated-text-content": "^1.0.1",
+    "react-awesome-reveal": "^4.2.3",
     "react-dom": "^18.2.0",
     "react-ga": "^3.3.1",
     "react-router": "^6.9.0",
