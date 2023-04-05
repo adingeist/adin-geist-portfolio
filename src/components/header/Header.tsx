@@ -24,7 +24,6 @@ const DRAWER_WIDTH = 240;
 const navItems: NavItemType[] = [
   { name: 'Home', linkTo: '/' },
   { name: 'Projects', linkTo: '/projects' },
-  { name: 'About', linkTo: '/about' },
   { name: 'Contact', linkTo: '/contact' },
 ];
 
