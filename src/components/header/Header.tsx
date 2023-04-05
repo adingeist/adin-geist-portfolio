@@ -91,7 +91,7 @@ export const Header: React.FunctionComponent = () => {
                 maxWidth: { xs: 350, md: 250 },
               }}
               alt="Adin Geist"
-              src="images/logo_sm.png"
+              src="/images/logo_sm.png"
             />
           </Box>
           <Box sx={{ height: '100%', display: { xs: 'none', sm: 'block' } }}>

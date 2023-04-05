@@ -4,6 +4,7 @@ import { HomePage } from './pages/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { ContactPage } from './pages/Contact/ContactPage';
+import { NiblPage } from './pages/projects/NiblPage';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <ContactPage />,
+  },
+  {
+    path: '/projects/nibl',
+    element: <NiblPage />,
   },
 ]);
 
