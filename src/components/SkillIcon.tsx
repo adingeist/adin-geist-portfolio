@@ -1,12 +1,12 @@
-import { Tooltip } from '@mui/material';
+import { Box, Tooltip, Typography } from '@mui/material';
 import * as React from 'react';
 import { Skill } from './pages/projects';
+import styled from '@emotion/styled';
 
 type Props = {
   skill: Skill;
+  variant?: 'small' | 'large';
 };
-
-const ICON_SIZE = '25px';
 
 const skillImageMap: Record<Skill, string> = {
   TypeScript: '/images/icons/typescript.png',
@@ -32,19 +32,49 @@ const skillImageMap: Record<Skill, string> = {
   HTML5: '/images/icons/html5.png',
 };
 
-export const SkillIcon: React.FunctionComponent<Props> = ({ skill }) => {
+const SmallImg = styled.img({
+  objectFit: 'contain',
+  marginRight: '8px',
+  borderRadius: '4px',
+  width: '25px',
+  height: '25px',
+});
+
+const LargeImg = styled.img({
+  objectFit: 'contain',
+  margin: '0 18px',
+  borderRadius: '6px',
+  width: '50px',
+  height: '50px',
+});
+
+export const SkillIcon: React.FunctionComponent<Props> = ({
+  skill,
+  variant = 'small',
+}) => {
+  const iconSize = variant === 'small' ? '25px' : '100px';
+
+  if (variant === 'small') {
+    return (
+      <Tooltip title={skill}>
+        <SmallImg src={skillImageMap[skill]} />
+      </Tooltip>
+    );
+  }
+
   return (
-    <Tooltip title={skill}>
-      <img
-        style={{
-          objectFit: 'contain',
-          marginRight: '8px',
-          borderRadius: '4px',
-        }}
-        width={ICON_SIZE}
-        height={ICON_SIZE}
-        src={skillImageMap[skill]}
-      />
-    </Tooltip>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <LargeImg src={skillImageMap[skill]} />
+      <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
+        {skill}
+      </Typography>
+    </Box>
   );
 };
