@@ -52,8 +52,6 @@ export const SkillIcon: React.FunctionComponent<Props> = ({
   skill,
   variant = 'small',
 }) => {
-  const iconSize = variant === 'small' ? '25px' : '100px';
-
   if (variant === 'small') {
     return (
       <Tooltip title={skill}>
@@ -67,12 +65,20 @@ export const SkillIcon: React.FunctionComponent<Props> = ({
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
       }}
     >
       <LargeImg src={skillImageMap[skill]} />
-      <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
+      <Typography
+        variant="body2"
+        sx={{
+          fontWeight: 'bold',
+          width: '90px',
+          textAlign: 'center',
+          marginTop: '4px',
+        }}
+      >
         {skill}
       </Typography>
     </Box>

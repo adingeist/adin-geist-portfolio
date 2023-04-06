@@ -28,6 +28,7 @@ export type Project = {
   description: string;
   showMoreLink: string;
   skills?: Skill[];
+  repoUrl?: string;
 };
 
 export const projects: Project[] = [
@@ -59,6 +60,7 @@ export const projects: Project[] = [
       'Developed an e-commerce site using React and integrated it with Stripe for processing order checkouts, adding and removing items from the cart, and managing listings. The website allowed users to easily browse and purchase products, with a streamlined checkout process. I leveraged React to create an intuitive and user-friendly interface, making it easy for customers to navigate and find products.',
     showMoreLink: '/projects/steeps',
     skills: ['JavaScript', 'React'],
+    repoUrl: 'https://github.com/adingeist/Steeps',
   },
   {
     imgSrc: '/images/the-conversation.png',
@@ -68,6 +70,7 @@ export const projects: Project[] = [
       "Developed a chat message board that allowed users to create an account, securely login, and then view and make posts. The posts were persisted in a SQL database, ensuring that users could access the message board and their posts whenever they logged in. I utilized a RESTful API architecture with JSON Web Tokens for authentication, ensuring that users could securely login and access the message board's features.",
     showMoreLink: '/projects/the-conversation',
     skills: ['Java', 'Spring', 'PostgreSQL', 'JavaScript', 'React'],
+    repoUrl: 'https://github.com/adingeist/TheConversation',
   },
   {
     imgSrc: '/images/algorithm-visualizer.png',
@@ -76,7 +79,8 @@ export const projects: Project[] = [
     description:
       'Collaboratively designed a webpage that visualizes insertion, bubble, selection, and quick sort algorithms. The vertical bars represent the size of an element in the array to sort. Users can change the size of the array and how fast the animation occurs.',
     showMoreLink: '/projects/algorithm-visualizer',
-    skills: ['JavaScript', 'React'],
+    skills: ['JavaScript'],
+    repoUrl: 'https://github.com/adingeist/AlgorithmVisualizer',
   },
   {
     imgSrc: '/images/chat-app.png',

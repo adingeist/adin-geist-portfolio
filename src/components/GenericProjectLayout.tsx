@@ -1,7 +1,9 @@
-import { Box, Typography, useTheme } from '@mui/material';
 import React, { useMemo } from 'react';
+import { Box, Button, Typography, useTheme } from '@mui/material';
 import { SkillIcon } from './SkillIcon';
 import { projects } from './pages/projects';
+import { AppDivider } from './AppDivider';
+import { GitHub } from '@mui/icons-material';
 
 type Props = {
   title: string;
@@ -31,9 +33,26 @@ export const GenericProjectLayout: React.FunctionComponent<Props> = (props) => {
           },
         }}
       >
-        <Box>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+          }}
+        >
           <Typography variant="h3">About the project</Typography>
           <Typography>{proj.description}</Typography>
+          {proj.repoUrl && (
+            <Button
+              onClick={() =>
+                window.open(proj.repoUrl, '_target', 'noopener noreferrer')
+              }
+              variant="text"
+              style={{ color: 'gray', alignSelf: 'flex-end' }}
+              endIcon={<GitHub />}
+            >
+              Source code
+            </Button>
+          )}
         </Box>
         <img style={{ objectFit: 'contain' }} width="500px" src={proj.imgSrc} />
       </Box>
@@ -41,7 +60,6 @@ export const GenericProjectLayout: React.FunctionComponent<Props> = (props) => {
       <Box
         sx={{
           display: 'flex',
-          alignItems: 'center',
           margin: '10px 0',
         }}
       >
@@ -49,6 +67,8 @@ export const GenericProjectLayout: React.FunctionComponent<Props> = (props) => {
           <SkillIcon variant="large" key={skill} skill={skill} />
         ))}
       </Box>
+
+      <AppDivider />
     </>
   );
 };

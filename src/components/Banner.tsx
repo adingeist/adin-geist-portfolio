@@ -1,11 +1,15 @@
-import { Box, Typography } from '@mui/material';
 import React from 'react';
+import { Box, Typography } from '@mui/material';
 
 type Props = {
   children: React.ReactNode;
+  fontSize?: string;
 };
 
-export const Banner: React.FunctionComponent<Props> = ({ children }) => (
+export const Banner: React.FunctionComponent<Props> = ({
+  children,
+  fontSize,
+}) => (
   <Box
     sx={{
       backgroundColor: '#222',
@@ -17,6 +21,8 @@ export const Banner: React.FunctionComponent<Props> = ({ children }) => (
       borderBottomRightRadius: '50px',
     }}
   >
-    <Typography variant="h3">{children}</Typography>
+    <Typography variant="h3" style={{ fontSize }}>
+      {children}
+    </Typography>
   </Box>
 );

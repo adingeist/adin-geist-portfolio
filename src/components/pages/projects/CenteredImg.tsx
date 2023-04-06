@@ -4,6 +4,7 @@ import React from 'react';
 type Props = {
   style?: React.HTMLAttributes<HTMLImageElement>['style'];
   src: string;
+  noMinWidth?: boolean;
 };
 
 const ImageContainer = styled.div({
@@ -14,7 +15,14 @@ const ImageContainer = styled.div({
 export const CenteredImg: React.FunctionComponent<Props> = (props) => {
   return (
     <ImageContainer>
-      <img {...props} />
+      <img
+        {...props}
+        style={{
+          minWidth: props.noMinWidth ? undefined : '450px',
+          width: props.noMinWidth ? undefined : '80%',
+          ...props.style,
+        }}
+      />
     </ImageContainer>
   );
 };

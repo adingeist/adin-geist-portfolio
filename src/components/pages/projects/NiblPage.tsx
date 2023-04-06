@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { Page } from '../../Page';
 import { Banner } from '../../Banner';
-import { Fade } from 'react-awesome-reveal';
-import { Box, Typography, useTheme } from '@mui/material';
+import { Typography, useTheme } from '@mui/material';
 import { Centered } from '../../Centered';
 import { ResponsiveYouTube } from '../../ResponsiveYouTube';
+import { GenericProjectLayout } from '../../GenericProjectLayout';
+import { AppDivider } from '../../AppDivider';
 
 export const NiblPage: React.FunctionComponent = () => {
   const theme = useTheme();
@@ -27,6 +28,10 @@ export const NiblPage: React.FunctionComponent = () => {
       <Centered>
         <Typography variant="h3">Demo</Typography>
         <ResponsiveYouTube src="https://www.youtube.com/embed/DVE5x8MeYDo" />
+
+        <AppDivider />
+
+        <GenericProjectLayout title="Nibl" />
       </Centered>
     </Page>
   );

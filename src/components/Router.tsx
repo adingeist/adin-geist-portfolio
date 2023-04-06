@@ -6,6 +6,8 @@ import { ProjectsPage } from './pages/ProjectsPage';
 import { ContactPage } from './pages/Contact/ContactPage';
 import { NiblPage } from './pages/projects/NiblPage';
 import { SteepsPage } from './pages/projects/SteepsPage';
+import { TheConversationPage } from './pages/projects/TheConversationPage';
+import { AlgorithmVisualizerPage } from './pages/projects/AlgorithmVisualizer';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
   {
     path: '/projects/steeps',
     element: <SteepsPage />,
+  },
+  {
+    path: '/projects/the-conversation',
+    element: <TheConversationPage />,
+  },
+  {
+    path: '/projects/algorithm-visualizer',
+    element: <AlgorithmVisualizerPage />,
   },
 ]);
 
