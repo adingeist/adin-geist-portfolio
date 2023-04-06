@@ -48,7 +48,7 @@ export const HomePage: FunctionComponent = () => {
           durationTillNext={4000}
           durationOfFadeOut={500}
           textOptions={[
-            'Top engineering talent.',
+            'Devoted learner.',
             'Delivery through collaboration.',
             'Quality, valuable code.',
           ]}
