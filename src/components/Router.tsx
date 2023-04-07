@@ -10,6 +10,7 @@ import { TheConversationPage } from './pages/projects/TheConversationPage';
 import { AlgorithmVisualizerPage } from './pages/projects/AlgorithmVisualizerPage';
 import { ChatAppPage } from './pages/projects/ChatAppPage';
 import { PopperPigPage } from './pages/projects/PopperPigPage';
+import { YahtzeePage } from './pages/projects/YahtzeePage';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: '/projects/popper-pig',
     element: <PopperPigPage />,
+  },
+  {
+    path: '/projects/yahtzee',
+    element: <YahtzeePage />,
   },
 ]);
 
