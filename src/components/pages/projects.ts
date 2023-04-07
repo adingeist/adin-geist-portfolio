@@ -111,6 +111,7 @@ export const projects: Project[] = [
       'Recreation of one of my favorite games! Just like the real game, players have five dice they roll three times and can hold dice between turns. Players gain points for rolling all the same or specific dice combinations. Having five dice show the same number earns the beloved Yahtzee! Users can associate their high score with their name on a leaderboard to recreate the real-life competition.',
     showMoreLink: '/projects/yahtzee',
     skills: ['C', 'Assembly'],
+    repoUrl: 'https://github.com/adingeist/Yahtzee',
   },
   {
     imgSrc: '/images/shape-fall.png',
