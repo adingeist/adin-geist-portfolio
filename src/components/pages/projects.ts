@@ -101,6 +101,7 @@ export const projects: Project[] = [
       "An exhilarating hyper-casual arcade game. The player takes control over their pig soaring through the sky that's determined to pop as many balloons as possible. The game has intuitive controls where the player can easily raise or lower the pig by holding or releasing the screen. As the game progresses, the game intensifies, getting faster and more challenging. Be careful not to let too many balloons escape or it's game over! ",
     showMoreLink: '/projects/popper-pig',
     skills: ['Python', 'Kivy', 'Android'],
+    repoUrl: 'https://github.com/adingeist/PopperPig',
   },
   {
     imgSrc: '/images/yahtzee.png',

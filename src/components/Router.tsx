@@ -9,6 +9,7 @@ import { SteepsPage } from './pages/projects/SteepsPage';
 import { TheConversationPage } from './pages/projects/TheConversationPage';
 import { AlgorithmVisualizerPage } from './pages/projects/AlgorithmVisualizerPage';
 import { ChatAppPage } from './pages/projects/ChatAppPage';
+import { PopperPigPage } from './pages/projects/PopperPigPage';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: '/projects/chat-app',
     element: <ChatAppPage />,
+  },
+  {
+    path: '/projects/popper-pig',
+    element: <PopperPigPage />,
   },
 ]);
 
