@@ -11,6 +11,7 @@ import { AlgorithmVisualizerPage } from './pages/projects/AlgorithmVisualizerPag
 import { ChatAppPage } from './pages/projects/ChatAppPage';
 import { PopperPigPage } from './pages/projects/PopperPigPage';
 import { YahtzeePage } from './pages/projects/YahtzeePage';
+import { ShapeFallPage } from './pages/projects/ShapeFall';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: '/projects/yahtzee',
     element: <YahtzeePage />,
+  },
+  {
+    path: '/projects/shape-fall',
+    element: <ShapeFallPage />,
   },
 ]);
 
