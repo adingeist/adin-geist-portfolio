@@ -14,6 +14,7 @@ import { YahtzeePage } from './pages/projects/YahtzeePage';
 import { ShapeFallPage } from './pages/projects/ShapeFall';
 import { GoldcrestPage } from './pages/projects/Goldcrest';
 import { BinkosDragstripPage } from './pages/projects/BinkosDragstripPage';
+import { TheGoldenPeachPage } from './pages/projects/TheGoldenPeachPage';
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
   {
     path: '/projects/binkos-dragstrip',
     element: <BinkosDragstripPage />,
+  },
+  {
+    path: '/projects/the-golden-peach',
+    element: <TheGoldenPeachPage />,
   },
 ]);
 
