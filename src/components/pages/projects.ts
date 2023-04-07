@@ -51,6 +51,7 @@ export const projects: Project[] = [
       'iOS',
       'Android',
     ],
+    repoUrl: 'https://github.com/adingeist/nibl-app',
   },
   {
     imgSrc: '/images/steeps.png',
@@ -90,6 +91,7 @@ export const projects: Project[] = [
       'Crafted a multithreaded server catering to the needs of numerous users joining a chat room. An accompanying user interface facilitating a seamless live socket connection. The application enables users to effortlessly access real-time information on other online users and messages by seamlessly communicating with the server.',
     showMoreLink: '/projects/chat-app',
     skills: ['Java'],
+    repoUrl: 'https://github.com/adingeist/ChatApp',
   },
   {
     imgSrc: '/images/popper-pig.png',

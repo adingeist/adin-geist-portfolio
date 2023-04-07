@@ -7,7 +7,8 @@ import { ContactPage } from './pages/Contact/ContactPage';
 import { NiblPage } from './pages/projects/NiblPage';
 import { SteepsPage } from './pages/projects/SteepsPage';
 import { TheConversationPage } from './pages/projects/TheConversationPage';
-import { AlgorithmVisualizerPage } from './pages/projects/AlgorithmVisualizer';
+import { AlgorithmVisualizerPage } from './pages/projects/AlgorithmVisualizerPage';
+import { ChatAppPage } from './pages/projects/ChatAppPage';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: '/projects/algorithm-visualizer',
     element: <AlgorithmVisualizerPage />,
+  },
+  {
+    path: '/projects/chat-app',
+    element: <ChatAppPage />,
   },
 ]);
 
