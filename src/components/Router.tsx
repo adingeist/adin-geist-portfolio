@@ -12,6 +12,7 @@ import { ChatAppPage } from './pages/projects/ChatAppPage';
 import { PopperPigPage } from './pages/projects/PopperPigPage';
 import { YahtzeePage } from './pages/projects/YahtzeePage';
 import { ShapeFallPage } from './pages/projects/ShapeFall';
+import { GoldcrestPage } from './pages/projects/Goldcrest';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: '/projects/shape-fall',
     element: <ShapeFallPage />,
+  },
+  {
+    path: '/projects/goldcrest',
+    element: <GoldcrestPage />,
   },
 ]);
 
