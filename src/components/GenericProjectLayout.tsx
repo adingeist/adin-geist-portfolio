@@ -54,7 +54,15 @@ export const GenericProjectLayout: React.FunctionComponent<Props> = (props) => {
             </Button>
           )}
         </Box>
-        <img style={{ objectFit: 'contain' }} width="500px" src={proj.imgSrc} />
+        <img
+          style={{
+            objectFit: 'contain',
+            borderRadius: theme.shape.borderRadius,
+            marginLeft: '20px',
+          }}
+          width="500px"
+          src={proj.imgSrc}
+        />
       </Box>
       <Typography variant="h6">Skills used:</Typography>
       <Box

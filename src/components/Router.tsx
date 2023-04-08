@@ -15,6 +15,7 @@ import { ShapeFallPage } from './pages/projects/ShapeFall';
 import { GoldcrestPage } from './pages/projects/Goldcrest';
 import { BinkosDragstripPage } from './pages/projects/BinkosDragstripPage';
 import { TheGoldenPeachPage } from './pages/projects/TheGoldenPeachPage';
+import { JSHeroPage } from './pages/projects/JSHero';
 
 const router = createBrowserRouter([
   {
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
   {
     path: '/projects/the-golden-peach',
     element: <TheGoldenPeachPage />,
+  },
+  {
+    path: '/projects/js-hero',
+    element: <JSHeroPage />,
   },
 ]);
 
