@@ -5,8 +5,14 @@ import { Header } from './components/header/Header';
 import { theme } from './theme/theme';
 import { Footer } from './components/footer/Footer';
 import { isHomePage } from './components/pages/HomePage';
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
 
 export const App: React.FunctionComponent = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <>
       <ThemeProvider theme={theme}>

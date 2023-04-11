@@ -2,10 +2,11 @@ import * as React from 'react';
 import { useState } from 'react';
 import { Banner } from '../../Banner';
 import { Box, IconButton, Typography } from '@mui/material';
-import { Email, LinkedIn } from '@mui/icons-material';
+import { Email } from '@mui/icons-material';
 import { Page } from '../../Page';
 import { Centered } from '../../Centered';
 import { EmailModal } from './EmailModal';
+import { AppIconButton } from '../../app-icons/AppIconButton';
 
 export const ContactPage: React.FunctionComponent = () => {
   const [emailOpen, setEmailOpen] = useState(false);
@@ -26,14 +27,7 @@ export const ContactPage: React.FunctionComponent = () => {
           </Typography>
 
           <Box sx={{ marginTop: '5px' }}>
-            <IconButton
-              size="large"
-              href="https://www.linkedin.com/in/adin-geist/"
-              target="_blank"
-              referrerPolicy="no-referrer"
-            >
-              <LinkedIn fontSize="large" />
-            </IconButton>
+            <AppIconButton icon="LinkedIn" iconSize="large" fontSize="large" />
             <IconButton size="large" onClick={handleOpen}>
               <Email fontSize="large" />
             </IconButton>

@@ -1,8 +1,6 @@
 import * as React from 'react';
-import { Box, IconButton, useTheme } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { isHomePage } from '../pages/HomePage';
+import { Box, useTheme } from '@mui/material';
+import { AppIconButton } from '../app-icons/AppIconButton';
 export const FOOTER_HEIGHT = '50px';
 
 export const Footer: React.FunctionComponent = () => {
@@ -22,22 +20,8 @@ export const Footer: React.FunctionComponent = () => {
         width: '100%',
       }}
     >
-      <IconButton
-        aria-label="Github Icon"
-        target="_blank"
-        referrerPolicy="no-referrer"
-        href="https://github.com/adingeist"
-      >
-        <GitHubIcon sx={{ width: '30px', height: '30px' }} />
-      </IconButton>
-      <IconButton
-        aria-label="LinkedIn Icon"
-        href="https://www.linkedin.com/in/adin-geist/"
-        target="_blank"
-        referrerPolicy="no-referrer"
-      >
-        <LinkedInIcon sx={{ width: '30px', height: '30px' }} />
-      </IconButton>
+      <AppIconButton icon="GitHub" iconSize="small" fontSize="large" />
+      <AppIconButton icon="LinkedIn" iconSize="small" fontSize="large" />
     </Box>
   );
 };

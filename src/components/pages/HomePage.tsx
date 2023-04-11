@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Box, CssBaseline, styled, useTheme } from '@mui/material';
-import { FunctionComponent } from 'react';
 import { Page } from '../Page';
 import AnimatedText from 'react-animated-text-content';
 import { AnimatedTextLoop } from '../AnimatedTextLoop';
@@ -11,7 +10,7 @@ export const isHomePage = () => window.location.pathname === '/';
 
 const AnimatedH1 = styled(AnimatedText)(({ theme }) => theme.typography.h1);
 
-export const HomePage: FunctionComponent = () => {
+export const HomePage: React.FunctionComponent = () => {
   const theme = useTheme();
 
   return (
