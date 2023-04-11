@@ -6,11 +6,16 @@ import { theme } from './theme/theme';
 import { Footer } from './components/footer/Footer';
 import { isHomePage } from './components/pages/HomePage';
 import { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-FQPFPZ7XT5');
 
 export const App: React.FunctionComponent = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.send({
+      hitType: 'pageview',
+      page: window.location.pathname + window.location.search,
+    });
   }, []);
 
   return (

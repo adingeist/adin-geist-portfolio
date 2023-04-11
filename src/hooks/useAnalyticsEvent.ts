@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 export const useAnalyticsEvent = (pageName: string) => {
   return (actionName: string, label = actionName) => {
