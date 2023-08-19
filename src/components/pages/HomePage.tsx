@@ -5,6 +5,7 @@ import AnimatedText from 'react-animated-text-content';
 import { AnimatedTextLoop } from '../AnimatedTextLoop';
 import { FOOTER_HEIGHT } from '../footer/Footer';
 import { HEADER_HEIGHT } from '../header/Header';
+import './WaveGradient.css';
 
 export const isHomePage = () => window.location.pathname === '/';
 
@@ -62,15 +63,9 @@ export const HomePage: React.FunctionComponent = () => {
           className="animated-paragraph"
         />
       </Box>
-      <video
-        style={{ height: '100%', width: '100%', objectFit: 'cover' }}
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="images/homepage.mov" />
-      </video>
+      <div className="animation-container">
+        <div className="wave"></div>
+      </div>
     </Page>
   );
 };
