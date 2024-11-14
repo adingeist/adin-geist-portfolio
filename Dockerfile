@@ -11,7 +11,7 @@ COPY ./ ./
 RUN npm run build
 
 # Host the webiste
-FROM nginx:stable-alpine as production
+FROM nginx:1.27.2-alpine3.20 as production
 
 ENV NODE_ENV=production
 
